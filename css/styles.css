@@ -10,7 +10,17 @@ img {
   width: 100%;
 }
 
+#mainpic {
+  margin-top: 20px;
+}
+
+#latest {
+  margin-top: 80px;
+  margin-left: 25px;
+}
+
 .body-col {
+  padding: 5px;
   margin-top: 20px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -19,6 +29,9 @@ img {
 
 #panel-6 {
   position: relative;
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 #panel-6 img {
@@ -71,7 +84,18 @@ img {
    z-index: 1;
  }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1200px) {
+
+  #mainpic {
+    margin-left: 25px;
+  }
+
+  .body-col {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width:1199) {
 
 
   .body-col {
