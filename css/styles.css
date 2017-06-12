@@ -1,5 +1,14 @@
+*, *:before, *:after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
 body {
   background-color: #e6eaf2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .head-col {
@@ -11,7 +20,7 @@ img {
 }
 
 #mainpic {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 #latest {
@@ -22,16 +31,12 @@ img {
 .body-col {
   padding: 5px;
   margin-top: 20px;
-  margin-left: 50%;
-  transform: translateX(-50%);
   box-shadow: 4px 4px 4px darkgrey;
 }
 
 #panel-6 {
   position: relative;
   margin-top: 20px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 #panel-6 img {
@@ -48,6 +53,15 @@ img {
 .panel-text {
   position: absolute;
   margin-bottom: 20px;
+}
+
+.nav-col-show {
+  width: 10px;
+  height: 10px;
+}
+
+.nav-col-show li {
+  border-bottom: 2px solid darkgray;
 }
 
 .nav-row {
@@ -74,7 +88,6 @@ img {
    margin-top: 20px;
  }
 .nav-col h3 {
-
   float:right;
   margin-right: 40px;
 }
@@ -84,27 +97,89 @@ img {
    z-index: 1;
  }
 
+ #latest {
+  border-bottom: solid 1px darkgray;
+ }
+
+ .col-xs-9 h3 {
+  border-bottom: solid 1px darkgray;
+ }
+
 @media screen and (min-width: 1200px) {
+
+  .clear-row {
+    clear: both;
+  }
 
   #mainpic {
     margin-left: 25px;
+    width: 97%;
   }
 
   .body-col {
-    float: right;
+    margin-top: 55px;
+    padding: 15px;
+    width: 23%;
+    margin-right: 25px;
+  }
+
+  .body-row1 {
+    float: left;
+  }
+
+  .body-row2 {
+    float:left;
+  }
+
+  .lastcard {
+    margin-right: 0;
+  }
+
+  #panel-6 {
+    margin: 0;
+    float: left;
+    width: 50%;
+  }
+
+  #panel-6 img {
+    height: 30%;
   }
 }
 
-@media screen and (min-width: 991px) and (max-width:1199) {
+
+@media screen and (min-width: 700px) and (max-width:1199) {
 
 
   .body-col {
     float:right;
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: 20px;
   }
 
   .body-img {
     max-height: 163px;
   }
 }
+
+.clear-row {
+  clear: both;
+}
+
+#panel-6 {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 990px) {
+
+  .body-col {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+  #panel-6 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
